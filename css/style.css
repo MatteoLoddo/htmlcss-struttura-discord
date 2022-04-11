@@ -12,6 +12,9 @@
 header{
     background-color: #ADD8E6;
 }
+nav{
+    padding: 1rem 0rem;
+}
 .section{
     padding: 3rem;
 }
@@ -20,7 +23,6 @@ header{
     max-width: 960px;
     min-height: 50px;
     margin: auto;
-    padding: 1rem 0rem;
 }
 
 .flex-box{
@@ -28,7 +30,7 @@ header{
 }
 
 .nav-bar div{
-    border: 1px dashed black;
+    border: var(--border-dashed);
     flex-shrink: 0;
     align-items: center;
 }
@@ -45,6 +47,12 @@ header{
     flex-grow: 1;
     text-align: center;
 }
+
+.logo{
+    line-height:calc(30px - 4px);
+    vertical-align: middle;
+}
+
 
 .logo,.bt-login{
     min-width: 15%;
@@ -65,17 +73,18 @@ header{
 
 .contain-col{
     justify-content: flex-start;
-    border: var(--border-dashed);
     min-width: 100%;
     min-height: 100%;
 }
 
 .col1{
+    border: var(--border-dashed);
     min-height: 400px;
     min-width: 60%;
     background-color: #1e90ff;
 }
 .col2{
+    border: var(--border-dashed);
     min-height: 300px;
     min-width: 40%;
     background-color: #FFC0CB;
@@ -96,7 +105,13 @@ header{
     flex-direction: row-reverse;
 }
 
+.contain-col.col-foot{
+    border: var(--border-dashed);
+
+}
+
 .last-content{
+    border: var(--border-dashed);
     background-color: green;
     min-width: 100%;
     min-height: 700px;
@@ -121,6 +136,41 @@ header{
     min-height: 450px;
     width: calc(100% / 4 );
 }
+
+.section-footer{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    padding-top: 2rem;
+
+}
+
+.container.foot{
+    align-items: flex-end;
+}
+
+.footer-close{
+    background-color: #7FFFD4;
+    margin: 0px auto;
+    width:100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-logo{
+    background-color: #FFC0CB;
+    border: var(--border-dashed);
+    padding: 5px;
+}
+
+.bt-foot{
+    background-color: #FFC0CB;
+    border: var(--border-dashed);
+    padding: 5px
+}
+
+
+
 
 
 
