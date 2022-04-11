@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 :root{
+    --color-dark: #23272A;
     --color-gray: #D3D3D3;
     --border-dashed: 2px dashed black;
-    --color-blue: #00008B;;
+    --color-blue: #00008B;
 }
 header{
     background-color: #ADD8E6;
@@ -18,7 +19,6 @@ header{
 .container{
     max-width: 960px;
     min-height: 50px;
-    /* border: 2px solid rgb(59, 57, 187); */
     margin: auto;
     padding: 1rem 0rem;
 }
@@ -64,6 +64,7 @@ header{
 }
 
 .contain-col{
+    justify-content: flex-start;
     border: var(--border-dashed);
     min-width: 100%;
     min-height: 100%;
@@ -76,7 +77,7 @@ header{
 }
 .col2{
     min-height: 300px;
-    min-width: 20%;
+    min-width: 40%;
     background-color: #FFC0CB;
     flex-grow: 1;
 }
@@ -87,10 +88,39 @@ header{
     background-color: var(--color-blue);
 }
 
-.container .reverse{
+.bg-dark{
+    background-color: var(--color-dark);
+}
+
+.contain-col.reverse{
     flex-direction: row-reverse;
 }
 
+.last-content{
+    background-color: green;
+    min-width: 100%;
+    min-height: 700px;
+}
+
+.first-item{
+    border: var(--border-dashed);
+    flex-shrink: 0;
+    background-color:#F08080 ;
+    min-height: 450px;
+    width: 30%;
+}
+
+.contain-second-item{
+    width:100%;
+    justify-content: flex-start;
+}
+
+.second-item{
+    border: 1px dashed #fff;
+    background-color: #20B2AA;
+    min-height: 450px;
+    width: calc(100% / 4 );
+}
 
 
 
